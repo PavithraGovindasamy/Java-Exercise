@@ -15,7 +15,7 @@ public class Exception3 {
 		try {
 			System.out.println("ok");
 			int n = 12 ;
-			System.exit(-89);
+			System.exit(0);
 		} catch (Exception e) {
 			System.out.println(e);
 		}
