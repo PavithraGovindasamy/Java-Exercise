@@ -4,7 +4,7 @@ import java.util.HashMap;
 /**
  * 
  * @author pavithra
- * class that implements FlyweightPattern to
+ * class that implements FlyweightPattern to use same object each time a connection is made
  *
  */
 public class FlyweightPattern {

@@ -12,22 +12,22 @@ import java.io.Serializable;
  */
 public class MementoPattern {
 	public static void main(String[] args)throws Exception {
-		vechicle vechicle=new vechicle();
+	Vechicle vechicle=new Vechicle();
 		System.out.println("the size of vechicle:"+vechicle.size);
-		ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream("file.dat"));
+		ObjectOutputStream object=new ObjectOutputStream(new FileOutputStream("file.dat"));
 		vechicle.size=8;
-		oos.writeObject(vechicle);
+		object.writeObject(vechicle);
 		vechicle.size=5;
 		System.out.println("size of vechicle:"+vechicle.size);
 		System.out.println("Restore old value:");
-		ObjectInputStream ois=new ObjectInputStream(new FileInputStream("file.dat"));
-		vechicle=(vechicle)ois.readObject();
+		ObjectInputStream new_object=new ObjectInputStream(new FileInputStream("file.dat"));
+		vechicle=(Vechicle)new_object.readObject();
 		System.out.println("vechicle size..:"+vechicle.size);
-		ois=new ObjectInputStream(new FileInputStream("file.dat"));
-		vechicle vechicle2=(vechicle)ois.readObject();
+		new_object=new ObjectInputStream(new FileInputStream("file.dat"));
+		Vechicle vechicle2=(Vechicle)new_object.readObject();
 		System.out.println(vechicle2.size);
 	}
 }
-class vechicle implements Serializable{
+class Vechicle implements Serializable{
 	int size=10;
 }
