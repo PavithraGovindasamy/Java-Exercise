@@ -5,8 +5,8 @@ import java.io.File;
 public class Rename {
 	public static void main(String[] args) {
 
-		File file = new File("file6.txt");
-		File rename = new File("file2.txt");
+		File file = new File("./file2.txt");
+		File rename = new File("./file6.txt");
 
 		boolean flag = file.renameTo(rename);
 

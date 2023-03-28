@@ -7,8 +7,8 @@ import java.io.IOException;
 public class FileCopy {
 	public static void main(String[] args) {
 		try {
-			FileReader sourceFile = new FileReader("source_file.txt");
-			FileWriter destinationFile = new FileWriter("destination_file.txt");
+			FileReader sourceFile = new FileReader("./source_file.txt");
+			FileWriter destinationFile = new FileWriter("./destination_file.txt");
 
 			int character;
 			while ((character = sourceFile.read()) != -1) {

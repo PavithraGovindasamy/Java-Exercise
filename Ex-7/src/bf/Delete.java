@@ -1,10 +1,9 @@
 package bf;
-
-import java.io.*;
+import java.io.File;
 
 public class Delete {
 	public static void main(String[] args) {
-		File file = new File("file1.txt");
+		File file = new File("./newfile.txt");
 
 		if (file.delete()) {
 			System.out.println("File deleted successfully");

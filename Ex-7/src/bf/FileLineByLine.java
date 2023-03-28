@@ -10,7 +10,7 @@ public class FileLineByLine {
 		BufferedReader reader;
 
 		try {
-			reader = new BufferedReader(new FileReader("sample.txt"));
+			reader = new BufferedReader(new FileReader("./sample.txt"));
 			String line = reader.readLine();
 
 			while (line != null) {

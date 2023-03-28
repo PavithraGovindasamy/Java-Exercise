@@ -7,11 +7,11 @@ import java.io.IOException;
 public class ImageCopy {
 	public static void main(String[] args) {
 
-		String sourcePath = "img/masangudi.png";
-		String destPath = "img/picture.jpg";
+		String sourcePath = "./img/masangudi.png";
+		String destinationPath = "./img/picture.jpg";
 
 		try (FileInputStream inputStream = new FileInputStream(sourcePath);
-				FileOutputStream outputStream = new FileOutputStream(destPath)) {
+				FileOutputStream outputStream = new FileOutputStream(destinationPath)) {
 
 			int bytesRead;
 			byte[] buffer = new byte[4096];
